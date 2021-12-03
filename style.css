@@ -1,0 +1,319 @@
+/*
+Theme Name: stvinniestheme
+Version: 1.0
+Description: A simple theme for St Vincents
+Tags: simple, easy, custom, minimal
+
+*/
+
+/* global */
+
+*{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:4em;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo {
+    width:15%;
+    height: inherit;
+}
+
+.logo img {
+    width:90%;
+    height:100%;
+    object-fit:contain;
+}
+
+nav {
+    width:30%;
+    color: black;
+    
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu a {
+    margin: 0 0.5em 0 0.5em;
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+}
+
+footer {
+    margin-top: 2em;
+    background-color: #0065a4;
+    color: white;
+    bottom: 0;
+    position:fixed;
+    padding:1em;
+    width: 100%;
+}
+
+.container {
+    padding: 4em 0 10em 0;
+    margin: auto;
+    width:70%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    margin: 1em 0 1em 0;
+    display: block;
+}
+
+/* frontpage */
+
+#front-page-container {
+    padding:0 0 10em 0;
+    margin: auto;
+    width:70%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.splash-image {
+    width:100%;
+    z-index: 9;
+    min-height: 25em;
+    background-color: transparent;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+
+.splash-image img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.desc {
+    padding: 1em 0;
+    margin: 2em 0 2em 0;
+    text-align:center;
+}
+
+.boxbox {
+    border-bottom: thin #ccc solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    
+    
+}
+
+.box:nth-child(1) {
+    border-right: thin #ccc solid;
+}
+
+.box {
+    display:block;
+    text-align:center;
+    width: 50%;
+    height: 20em;
+    padding:4em 1em;
+}
+
+.box p {
+    margin: 0.5em;
+}
+
+.social-media {
+    background: #006eb3;
+    color: white;
+}
+
+.sponsors {
+    margin: 2em 0 2em 0;
+    padding:1em;
+    min-height: 15em;
+    
+}
+
+/* newsletter */
+
+article {
+    width: 80%;
+    margin:2em auto;
+    padding: 0 0 1em 0;
+    border-bottom: thin #ccc solid;
+
+}
+
+article p {
+    margin: 1em 0 1em 0;
+}
+
+/* about */
+
+.about {
+    display: flex;
+}
+
+#about1 {
+    margin-top: 3em;
+}
+
+.about div {
+    width:50%;
+    min-height:20em;
+    padding: 1em;
+    border-bottom: thin #ccc solid;
+}
+
+.left {
+    border-right: #ccc solid thin;
+}
+
+/* newsletter */
+
+.post-tag {
+    margin: 0 1em;
+}
+
+/* service page */
+.donation-services {
+    margin-top: 3em;
+    width:100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.support-services {
+    width:100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.service-detailed {
+    text-align: center;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 250px) and (max-width: 700px) {
+ nav {
+     width: 80%;
+     font-size: 0.8em;
+ }
+
+ .container {
+     width: 100%;
+     padding: 3em 1em 10em 1em;
+     font-size: 0.9em;
+ }
+
+ article {
+     font-size:0.9em;
+     width: 90%;
+     margin: 0 1em 0 1em;
+ }
+
+
+ /* front-page */
+ 
+    #front-page-container {
+     width: 100%;
+     font-size: 0.9em;
+ }
+
+ .splash-image {
+     min-height:10em;
+ }
+
+ .desc {
+     padding:1em;
+ }
+
+ .box {
+    display: block;
+    width:100%;
+    padding:4em 1em;
+ }
+
+ /* about-page */
+ .about div {
+    min-height:15em;
+ }
+
+  /* services-page */
+.donation-services {
+    display: block;
+}
+
+.donation-services img {
+    display:block;
+    margin: 1em 0 1em 0;
+}
+
+.support-services {
+    display: block;
+}
+
+.support-services img {
+    display:block;
+    margin: 1em 0 1em 0;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 701px) and (max-width: 1400px) {
+    nav {
+        width: 45%;
+    }
+    
+/* front-page */
+    .splash-image {
+        min-height:13em;
+    }
+
+      /* services-page */
+.donation-services {
+    display: block;
+}
+
+.donation-services img {
+    margin: 1em 0 1em 0;
+    display:block;
+}
+
+.support-services {
+    display: block;
+}
+
+.support-services img {
+    margin: 1em 0 1em 0;
+    display:block;
+}
+
+}
+
+
+
